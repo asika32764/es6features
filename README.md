@@ -11,9 +11,9 @@
 - [CloudiDust](https://github.com/CloudiDust)
 
 ## Introduction 简介
-ECMAScript 6 is the upcoming version of the ECMAScript standard. This standard is targeting ratification in June 2015. ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](http://kangax.github.io/es5-compat-table/es6/).
+ECMAScript 6, also known as ECMAScript 2015, is the upcoming version of the ECMAScript standard. This standard is targeting ratification in June 2015. ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](http://kangax.github.io/es5-compat-table/es6/).
 
-ECMAScript 6 是 ECMAScript 的下一代标准，预计将在 2015年6月 正式发布。ES6 的发布将是这门语言自2009年 ES5 正式发布以来的首次更新，是一次富有意义的更新。主流Javascript引擎中的这些新特性[正在](http://kangax.github.io/es5-compat-table/es6/)开发中。
+ECMAScript 6(标准官方名称是 ECMAScript 2015) 是 ECMAScript 的下一代标准，预计将在 2015年6月 正式发布。ES6 的发布将是这门语言自2009年 ES5 正式发布以来的首次更新，是一次富有意义的更新。主流Javascript引擎中的这些新特性[正在](http://kangax.github.io/es5-compat-table/es6/)开发中。
 
 See the [draft ES6 standard](https://people.mozilla.org/~jorendorff/es6-draft.html) for full specification of the ECMAScript 6 language.
 
@@ -632,7 +632,7 @@ Array.from(document.querySelectorAll('*')) // Returns a real Array 返回一个�
 Array.of(1, 2, 3) // Similar to new Array(...), but without special one-arg behavior 与Array(...)类似，但只有一个参数时，并不会有特殊行为。
 [0, 0, 0].fill(7, 1) // [0,7,7]
 [1, 2, 3].find(x => x == 3) // 3
-[1,2,3].findIndex(x => x == 2) // 1
+[1, 2, 3].findIndex(x => x == 2) // 1
 ["a", "b", "c"].entries() // iterator [0, "a"], [1,"b"], [2,"c"]
 ["a", "b", "c"].keys() // iterator 0, 1, 2
 ["a", "b", "c"].values() // iterator "a", "b", "c"
