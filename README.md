@@ -401,13 +401,13 @@ Some additional features include `export default` and `export *`:
 export * from "lib/math";
 export var e = 2.71828182846;
 export default function(x) {
-    return Math.exp(x);
+    return Math.log(x);
 }
 ```
 ```JavaScript
 // app.js
-import exp, {pi, e} from "lib/mathplusplus";
-alert("2π = " + exp(pi, e));
+import ln, {pi, e} from "lib/mathplusplus";
+alert("2π = " + ln(e)*pi*2);
 ```
 
 ### Module Loaders 模块加载器
@@ -612,9 +612,9 @@ arr.length == 2
 ```
 
 ### Math + Number + String + Object APIs 扩展
-Many new library additions, including core Math libraries, Array conversion helpers, and Object.assign for copying.
+Many new library additions, including core Math libraries, Array conversion helpers,  String helpers, and Object.assign for copying.
 
-新加入了许多库，包括核心数学库，进行数组转换的协助函数，以及用来进行拷贝的Object.assign。
+新加入了许多库，包括核心数学库，进行数组转换的协助函数，字符串 helper，以及用来进行拷贝的Object.assign。
 
 ```JavaScript
 Number.EPSILON
@@ -633,6 +633,7 @@ Array.of(1, 2, 3) // Similar to new Array(...), but without special one-arg beha
 [0, 0, 0].fill(7, 1) // [0,7,7]
 [1, 2, 3].find(x => x == 3) // 3
 [1, 2, 3].findIndex(x => x == 2) // 1
+[1, 2, 3, 4, 5].copyWithin(3, 0) // [1, 2, 3, 1, 2]
 ["a", "b", "c"].entries() // iterator [0, "a"], [1,"b"], [2,"c"]
 ["a", "b", "c"].keys() // iterator 0, 1, 2
 ["a", "b", "c"].values() // iterator "a", "b", "c"
