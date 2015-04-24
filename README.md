@@ -28,7 +28,7 @@ ES6 包含了以下这些新特性：
 - [enhanced object literals 增强的对象字面量](#enhanced-object-literals-%E5%A2%9E%E5%BC%BA%E7%9A%84object%E5%AD%97%E9%9D%A2%E9%87%8F)
 - [template strings 模板字符串](#template-strings-%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2)
 - [destructuring 解构](#destructuring-%E8%A7%A3%E6%9E%84)
-- [default + rest + spread 默认值+多余参数组合+参数伸展](#default--rest--spread--%E9%BB%98%E8%AE%A4%E5%80%BC%E5%A4%9A%E4%BD%99%E5%8F%82%E6%95%B0%E7%BB%84%E5%90%88%E5%8F%82%E6%95%B0%E4%BC%B8%E5%B1%95)
+- [default + rest + spread 默认参数+不定参数+参数展开](#default--rest--spread--%E9%BB%98%E8%AE%A4%E5%80%BC%E5%A4%9A%E4%BD%99%E5%8F%82%E6%95%B0%E7%BB%84%E5%90%88%E5%8F%82%E6%95%B0%E4%BC%B8%E5%B1%95)
 - [let + const let + const 操作符](#let--const-%E6%93%8D%E4%BD%9C%E7%AC%A6)
 - [iterators + for..of 迭代器 + for...of](#iterators--forof-%E8%BF%AD%E4%BB%A3%E5%99%A8--forof-%E5%BE%AA%E7%8E%AF)
 - [generators 生成器](#generators-%E7%94%9F%E6%88%90%E5%99%A8)
@@ -203,13 +203,13 @@ var [a = 1] = [];
 a === 1;
 ```
 
-### Default + Rest + Spread  默认值+多余参数组合+参数伸展
+### Default + Rest + Spread  默认参数+不定参数+参数展开
 Callee-evaluated default parameter values.  Turn an array into consecutive arguments in a function call.  Bind trailing parameters to an array.  Rest replaces the need for `arguments` and addresses common cases more directly.
 
 支持由被调用函数进行求值的参数默认值。
 在函数调用时使用`...`运算符，可以将作为参数的数组拆解为连续的多个参数。
 在函数定义时使用`...`运算符，则可以将函数尾部的多个参数绑定到一个数组中。
-“多余参数组合”取代了`arguments`，并可更直接地应用于通常的用例中。
+不定参数取代了`arguments`，并可更直接地应用于通常的用例中。
 
 ```JavaScript
 function f(x, y=12) {
