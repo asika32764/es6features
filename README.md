@@ -27,7 +27,7 @@ ES6 包含了以下這些新特性：
 - [classes 類](#classes-類)
 - [enhanced object literals 增強的物件字面量](#enhanced-object-literals-增強的object字面量)
 - [template strings 模板字串](#template-strings-模板字串)
-- [destructuring 解構](#destructuring-解构)
+- [destructuring 解構](#destructuring-解構)
 - [default PLUS rest PLUS spread 預設參數 不定參數 參數展開](#default--rest--spread--預設參數不定參數參數展開)
 - [let PLUS const let PLUS const 操作符](#let--const-操作符)
 - [iterators PLUS for..of 迭代器 PLUS for...of](#iterators--forof-迭代器--forof-循環)
