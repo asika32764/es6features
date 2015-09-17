@@ -1,5 +1,7 @@
 # <img src="http://i.imgur.com/yy1sACZ.png" width="100px"/> ECMAScript 6 Features 中文版
 
+[![Join the chat at https://gitter.im/asika32764/es6features](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/asika32764/es6features?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 如詞不達意，歡迎提 PR & issue
 
 採用中英混排的方式進行譯制，如不解請查看對應原文
